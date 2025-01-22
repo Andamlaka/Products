@@ -1,3 +1,5 @@
+'use-client'
+
 import axios from "axios";
 import Image from "next/image";
 import Hero from "./components/Hero";
@@ -33,7 +35,7 @@ export default async function Home() {
             </Link>
             <h2 className="text-lg font-semibold mt-2">{product.title}</h2>
             <p className="text-green-600 font-bold">${product.price}</p>
-            <Link href={`/Product/${product.id}`}>
+            <Link href={`/product/${product.id}`}>
               <button type="button" className="mt-4 w-40 bg-blue-500 py-2 rounded text-white">
                 View Detail
               </button>
